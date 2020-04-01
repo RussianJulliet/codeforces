@@ -9,7 +9,7 @@ def min1_array(array):
             array[i] += 1
             array[i + 1] = 0
             delete += 1
-    print(array)
+    # print(array)
     # print('*', delete)
     if delete != 0:
         for i in range(len(array)):
@@ -18,11 +18,10 @@ def min1_array(array):
                     array[k] = array[k + 1]
         for t in range(delete):
             array.pop()
-        print(array)
-        min1_array(array)
+        # print(array)
+        return min1_array(array)
     if delete == 0:
-        a = len(array)
-        return a
+        return len(array)
 
 
 print(min1_array(array))
