@@ -1,0 +1,1 @@
+print('Я не лентяйка, codeforces упал')
